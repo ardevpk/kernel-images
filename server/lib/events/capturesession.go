@@ -208,7 +208,7 @@ func (s *CaptureSession) Stop() {
 		return
 	}
 	s.publishLocked(Event{
-		Type:     TypeSessionEnded,
+		Type:     SessionEnded,
 		Category: CategorySystem,
 		Source:   Source{Kind: KindKernelAPI},
 	})
